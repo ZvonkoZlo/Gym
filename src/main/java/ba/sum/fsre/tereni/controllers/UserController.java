@@ -36,7 +36,7 @@ public class UserController {
         model.addAttribute("role", role);
 
 
-        return "Facilities/index";
+        return "index";
     }
     @GetMapping("/users")
     public String listUsers (Model model){
