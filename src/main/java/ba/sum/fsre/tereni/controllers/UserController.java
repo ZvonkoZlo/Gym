@@ -34,9 +34,9 @@ public class UserController {
         User user = userRepository.findByEmail(email);
         String role = userDetails.getMainRole();
         model.addAttribute("role", role);
-        model.addAttribute("userDetails", userDetails);
-        model.addAttribute("activeLink", "Korisnici");
-        return "index";
+
+
+        return "Facilities/index";
     }
     @GetMapping("/users")
     public String listUsers (Model model){
