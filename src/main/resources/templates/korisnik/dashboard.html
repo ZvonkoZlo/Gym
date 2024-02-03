@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Korisnikova Rezervacija Gym Terena</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Dobrodošli, Korisnik!</h1>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit" class="btn btn-danger">Odjavi se</button>
+    </form>
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Rezervacija Gym Terena</h5>
+            <p class="card-text">Pregledajte dostupne gym terene i izvršite rezervaciju.</p>
+            <a href="#" class="btn btn-primary">Rezervacija Terena</a>
+        </div>
+    </div>
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Moje Rezervacije</h5>
+            <p class="card-text">Pregledajte svoje trenutne i prošle rezervacije gym terena.</p>
+            <a href="#" class="btn btn-primary">Pregled Rezervacija</a>
+        </div>
+    </div>
+
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

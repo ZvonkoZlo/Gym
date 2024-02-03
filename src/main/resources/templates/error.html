@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error</title>
+</head>
+<body>
+<h1>Something went wrong!</h1>
+<div>Custom error details here.</div>
+<header>
+    <nav>
+        <ul>
+            <li th:if="${role} == 'ADMIN'"><a th:href="@{/users}">Profil</a></li>
+            <li th:if="${role} == 'KORISNIK'"><a th:href="@{/korisnik/edit}">Profil</a></li>
+
+            <li><a th:href="@{/reservation}">Rezervacije</a></li>
+            <li><a th:href="@{/facilities}">Tereni</a></li>
+            <li> <form th:action="@{/logout}" method="post">
+                <input class="dropdown-item" type="submit" value="Odjavite se"/>
+            </form></li>
+        </ul>
+    </nav>
+</header>
+
+</body>
+</html>
